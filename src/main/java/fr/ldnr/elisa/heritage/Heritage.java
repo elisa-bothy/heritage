@@ -5,6 +5,10 @@
 
 package fr.ldnr.elisa.heritage;
 
+import fr.ldnr.elisa.entities.Boat;
+import fr.ldnr.elisa.entities.Car;
+import fr.ldnr.elisa.entities.Plane;
+
 /**
  *
  * @author Elisa Bothy
@@ -12,6 +16,14 @@ package fr.ldnr.elisa.heritage;
 public class Heritage {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Car alpha = new Car();
+        alpha.start();
+        alpha.stop();
+        Plane plane = new Plane();
+        plane.start();
+        plane.stop();
+        Boat boat = new Boat();
+        boat.start();
+        boat.stop();
     }
 }
