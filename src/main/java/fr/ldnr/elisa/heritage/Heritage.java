@@ -19,6 +19,10 @@ public class Heritage {
         Car alpha = new Car();
         alpha.start();
         alpha.stop();
+        alpha.accelerate(25.6);
+        System.out.println("alpha = " + alpha);
+        alpha.slowDown(15);
+        System.out.println("alpha = " + alpha);
         Plane plane = new Plane();
         plane.start();
         plane.stop();

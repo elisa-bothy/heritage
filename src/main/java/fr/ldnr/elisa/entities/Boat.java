@@ -8,16 +8,17 @@ package fr.ldnr.elisa.entities;
  *
  * @author Elisa Bothy
  */
-public class Boat extends Vehicle {
+public class Boat extends MotorizedVehicle {
     
     private int tonnage;
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Boat{");
-        sb.append("tonnage=").append(tonnage);
-        sb.append('}');
+        sb.append("Boat{")
+            .append("speed=").append(speed)
+            .append("tonnage=").append(tonnage)
+            .append('}');
         return sb.toString();
     }
 

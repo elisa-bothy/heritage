@@ -8,16 +8,17 @@ package fr.ldnr.elisa.entities;
  *
  * @author Elisa Bothy
  */
-public class Plane extends Vehicle {
+public class Plane extends MotorizedVehicle {
     
     private int capacity;
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Plane{");
-        sb.append("capacity=").append(capacity);
-        sb.append('}');
+        sb.append("Plane{")
+            .append("speed=").append(speed)
+            .append("capacity=").append(capacity)
+            .append('}');
         return sb.toString();
     }
        
